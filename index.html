@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Tela de login moderna, responsiva, semântica e profissional com imagem lateral."
+    />
+
+    <meta
+      name="keywords"
+      content="login, tela de login, formulario login, html css login, imagem lateral, login moderno, front-end, projeto html css, interface login, UI login, layout responsivo, formulario semantico, css moderno, reset css, design tokens, projeto profissional"
+    />
+
+    <meta name="author" content="Mateus Ernandes" />
+
+    <title>Login Moderno | Front-End</title>
+
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <main class="login-page">
+      <section class="login-card" aria-labelledby="login-title">
+        <aside
+          class="login-card__visual"
+          aria-label="Área visual do sistema FishTrack"
+        >
+          <div class="login-card__visual-content">
+            <span class="login-card__tag"> 🎣 Pesca inteligente </span>
+
+            <h2 class="login-card__visual-title">
+              Organize suas pescarias com mais controle e praticidade.
+            </h2>
+
+            <p class="login-card__visual-description">
+              Acesse seu painel para registrar capturas, salvar pontos
+              favoritos, acompanhar espécies e planejar suas próximas aventuras
+              na água.
+            </p>
+
+            <ul
+              class="login-card__features"
+              aria-label="Recursos do painel FishTrack"
+            >
+              <li class="login-card__feature">🌊 Locais salvos</li>
+
+              <li class="login-card__feature">🐟 Espécies registradas</li>
+
+              <li class="login-card__feature">📍 Pontos favoritos</li>
+
+              <li class="login-card__feature">🏆 Melhores capturas</li>
+            </ul>
+          </div>
+
+          <img
+            class="login-card__image"
+            src="./assets/img/login-fishing-illustration.svg"
+            alt="Ilustração de um pescador em um lago usando o sistema FishTrack"
+          />
+        </aside>
+
+        <section class="login-card__content" aria-labelledby="login-title">
+          <header class="login-header">
+            <a
+              class="brand"
+              href="#"
+              aria-label="Voltar para a página inicial do FishTrack"
+            >
+              <img
+                class="brand__logo"
+                src="./assets/img/logo-fishtrack.png"
+                alt="FishTrack"
+              />
+            </a>
+
+            <p class="login-header__subtitle">
+              BEM-VINDO DE VOLTA, PESCADOR 👋
+            </p>
+
+            <h1 class="login-header__title" id="login-title">
+              Acesse sua conta
+            </h1>
+
+            <p class="login-header__description">
+              Entre no seu painel para registrar pescarias, capturas, locais
+              favoritos e acompanhar suas próximas aventuras.
+            </p>
+          </header>
+
+          <form class="login-form" action="#" method="post">
+            <div class="form-group">
+              <label class="form-label" for="email"> E-mail </label>
+
+              <input
+                class="form-control"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="pescador@email.com"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <div class="form-label-wrapper">
+                <label class="form-label" for="password"> Senha </label>
+
+                <a class="form-link" href="#"> Esqueceu? </a>
+              </div>
+
+              <input
+                class="form-control"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Digite sua senha"
+                autocomplete="current-password"
+                minlength="6"
+                required
+              />
+            </div>
+
+            <div class="form-options">
+              <label class="checkbox">
+                <input
+                  class="checkbox__input"
+                  type="checkbox"
+                  name="remember"
+                />
+
+                <span class="checkbox__box" aria-hidden="true"></span>
+
+                <span class="checkbox__text"> Lembrar meu acesso </span>
+              </label>
+            </div>
+
+            <button class="login-form__button" type="submit">
+              Entrar no painel 🎣
+            </button>
+          </form>
+
+          <footer class="login-footer">
+            <p class="login-footer__text">
+              Ainda não tem uma conta?
+              <a class="login-footer__link" href="#"> Criar conta grátis </a>
+            </p>
+
+            <p class="login-security">
+              🔒 Seus dados estão protegidos com acesso seguro.
+            </p>
+          </footer>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
