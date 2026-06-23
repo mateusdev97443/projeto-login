@@ -11,4 +11,4 @@ HTML5 · CSS3
 Praticar estrutura de formulários, estilização e organização de código.
 
 ## 🚧 Status
-Em construção — subindo os arquivos em breve.
+✅ Status: Projeto finalizado
